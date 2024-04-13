@@ -1,0 +1,24 @@
+body {
+  font-weight: normal;
+  background-color: #f6f6f6;
+}
+
+.project-content h1 {
+  @apply text-4xl font-semibold font-primary text-gray-900 mt-4 mb-2
+}
+
+.project-content h3 {
+  @apply text-2xl font-semibold font-primary text-primary-500 mt-4 mb-2
+}
+
+.project-content p {
+  @apply text-texts-normal
+}
+
+.project-content img {
+  @apply mx-auto mb-4
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
