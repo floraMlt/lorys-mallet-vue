@@ -1,5 +1,7 @@
 <template>
-  <div class="relative flex flex-col items-center p-24 z-0 max-w-screen-xl">
+  <div
+    class="relative flex flex-col items-center sm:p-24 s:p-8 z-0 max-w-screen-xl"
+  >
     <h1
       class="text-3xl text-primary-500 mb-10 flex text-center font-semibold font-primary"
     >
@@ -9,7 +11,7 @@
     <div class="flex items-center">
       <div>
         <p
-          class="text-center font-semibold text-texts-normal mb-6 px-32 text-sm"
+          class="text-center font-semibold text-texts-normal text-sm mb-6 lg:px-32 md:px-16"
         >
           Je m'appelle Lorys Mallet, j'ai 20 ans, et ma passion pour les
           sciences, en particulier la biologie, guide mon parcours académique et
@@ -17,7 +19,7 @@
           mon engagement dans tout ce que j'entreprends.
         </p>
 
-        <div class="grid grid-cols-2 gap-12 w-full">
+        <div class="grid sm:grid-cols-2 s:grid-cols-1 gap-12 w-full">
           <div>
             <p class="text-texts-normal text-justify text-sm">
               Fasciné par la compréhension du monde qui nous entoure et le
@@ -101,7 +103,7 @@
     </button>
 
     <div
-      class="h-fit w-2/4 rounded-xl shadow-lg px-6 py-4 mt-8 mx-auto text-xl text-center hover:shadow-xl hover:cursor-pointer transition-all"
+      class="h-fit rounded-xl shadow-lg px-6 py-4 mt-8 mx-auto text-xl text-center hover:shadow-xl hover:cursor-pointer transition-all sm:w-2/4 s:w-full"
     >
       <p class="text-lg text-texts-normal">Contactez-moi par mail :</p>
 

@@ -19,6 +19,11 @@ body {
   @apply mx-auto mb-4
 }
 
+.project-content a {
+  @apply text-primary-600 font-semibold text-lg text-center
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

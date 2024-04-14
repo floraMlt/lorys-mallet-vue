@@ -1,7 +1,10 @@
 <template>
-  <RouterLink :to="{ name: 'Project', params: { id: project.id } }">
+  <RouterLink
+    :to="{ name: 'Project', params: { id: project.id } }"
+    class="sm:w-auto s:w-full"
+  >
     <div
-      class="sm:max-w-sm h-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all s:max-w-full"
+      class="sm:max-w-sm h-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all s:w-full"
     >
       <img
         :src="project.imgCover"

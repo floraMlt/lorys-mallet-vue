@@ -7,7 +7,7 @@
         class="w-screen h-[150px] object-cover"
       />
 
-      <div class="py-4 px-24">
+      <div class="py-4 sm:px-24 s:px-8">
         <router-link
           :to="{ name: 'Projects' }"
           class="border border-primary-500 rounded text-texts-normal py-1 px-2 hover:bg-primary-500 hover:cursor-pointer hover:text-white transition-all"

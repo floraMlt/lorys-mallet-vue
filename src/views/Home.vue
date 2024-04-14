@@ -12,46 +12,50 @@
       <div>
         <div>
           <h1
-            class="sm:text-6xl text-primary-500 mb-6 flex font-semibold font-primary s:mt-5 s:text-center s:text-5xl s:leading-tight"
+            class="flex text-primary-500 mb-6 font-semibold font-primary sm:text-6xl sm:justify-start s:mt-5 s:text-center s:text-5xl s:leading-tight s:justify-center"
           >
             Lorys Mallet
           </h1>
 
           <h3
-            class="text-3xl text-primary-500 mb-8 flex font-semibold font-primary s:text-center"
+            class="text-3xl text-primary-500 mb-8 flex font-semibold font-primary sm:justify-start s:text-center s:justify-center"
           >
             Étudiant en biologie
           </h3>
 
-          <h5 class="w-3/4 text-s text-texts-normal mb-14 flex font-secondary">
+          <h5
+            class="w-3/4 text-s text-texts-normal mb-14 flex font-secondary sm:text-left sm:mx-0 s:text-center s:mx-auto"
+          >
             Je suis passionné par les sciences et plus précisément par la
             biologie. Venez découvrir mes projets !
           </h5>
         </div>
 
-        <button
-          class="bg-secondary-500 hover:bg-secondary-700 w-28 text-white font-semibold py-2 px-4 mr-4 rounded transition-all"
-          @click="openModal"
-        >
-          Mon CV
-        </button>
-
-        <Transition>
-          <ModalCV v-if="isModalOpen" @close-modal="closeModal" />
-        </Transition>
-
-        <router-link :to="{ name: 'Projects' }">
+        <div class="flex sm:justify-start s:justify-center">
           <button
-            class="bg-secondary-500 hover:bg-secondary-700 w-30 text-white font-semibold py-2 px-4 rounded transition-all"
+            class="bg-secondary-500 hover:bg-secondary-700 w-28 text-white font-semibold py-2 px-4 mr-4 rounded transition-all"
+            @click="openModal"
           >
-            Mes projets
+            Mon CV
           </button>
-        </router-link>
+
+          <Transition>
+            <ModalCV v-if="isModalOpen" @close-modal="closeModal" />
+          </Transition>
+
+          <router-link :to="{ name: 'Projects' }">
+            <button
+              class="bg-secondary-500 hover:bg-secondary-700 w-30 text-white font-semibold py-2 px-4 rounded transition-all"
+            >
+              Mes projets
+            </button>
+          </router-link>
+        </div>
       </div>
     </div>
 
     <div
-      class="h-fit w-2/4 rounded-xl shadow-lg px-6 py-4 mt-16 mx-auto text-xl text-center hover:shadow-xl hover:cursor-pointer transition-all"
+      class="h-fit rounded-xl shadow-lg px-6 py-4 mt-16 mx-auto text-xl text-center hover:shadow-xl hover:cursor-pointer sm:w-2/4 s:w-full transition-all"
     >
       <p class="text-lg text-texts-normal">Contactez-moi par mail :</p>
 

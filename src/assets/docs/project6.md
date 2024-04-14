@@ -10,7 +10,7 @@ tags:
 
 ![image](/img/photoconf.webp)
 
-[Lien vers la conférence](https://pod.univ-lr.fr/video/4000-steinermov/){:target="\_blank" }
+[→ Lien vers la conférence](https://pod.univ-lr.fr/video/4000-steinermov/)
 
 ### Description
 
